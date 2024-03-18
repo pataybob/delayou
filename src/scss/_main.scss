@@ -1,0 +1,165 @@
+.wrapper{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    .container{
+        main{  
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .main__head{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    font-size: 44px;
+                    font-weight: $bold;
+                    max-width: 80%;
+                }
+                p{
+                    font-size: 22px;
+                    font-weight: $medium;
+                }
+            }
+            .main__body{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .advantages{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    max-width: 70%;
+                    .ul__item{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 30px;
+                    }
+                }
+            }
+            .main__footer{
+                margin-top: 30px;
+                .advantages__container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .adv__item{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: 478px;
+                        height: 142px;
+                        box-shadow: 6px 10px 30px rgb(94, 229, 181,0.15);
+                        justify-content: center;
+                        align-items: center;
+                        h1{
+                            font-size: 28px;
+                            font-family: $bold;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-family: $regular;
+                        }
+                    }
+
+                }
+            }
+        }
+       .about__us{
+            .about__header{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                h1{
+                    font-size: 48px;
+                    font-weight: $bold;
+                }
+                p{
+                    font-size: 20px;
+                    max-width: 60%;
+                    font-weight: $light;
+                    
+                }
+            }
+            .about__body{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                ul{
+                    margin: 0 auto;
+                    justify-content: center;
+                    max-width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li{
+                        list-style-type: decimal;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        background: url(../images/backgrounds/banner.png) center no-repeat;
+        height: 520px;
+    }
+    .order{
+        width: 100vw;
+        height: 343px;
+        background: linear-gradient(to right,#040019,#14007F);
+        color: $whiteColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        h1{
+            font-size: 40px;
+            font-family: $regular;
+            display: block;
+            position: relative;
+            &::after{
+                position: relative;
+                left: 600px;
+                transform: rotate(-2deg);
+                width: 300px;
+                height: 3px;
+                background-color: #5EE5B5;
+                display: block;
+                content: " ";
+            }
+        }
+        p{
+            font-size: 24px;
+            font-family: $light;
+
+        }
+        .btn{
+            width: 320px;
+            height: 50px;
+            background-color: $buttonsColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            a{
+                text-decoration: underline;
+                
+            }
+            &:hover{
+                box-shadow: #cbc8c8 0px 2px 30px;
+                transition: 0.3s ease;
+            }
+        }
+        
+    }
+}
