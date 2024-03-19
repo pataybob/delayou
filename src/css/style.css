@@ -142,6 +142,9 @@ a {
   flex-direction: column;
   gap: 120px;
 }
+.wrapper .container {
+  max-width: 1608px;
+}
 .wrapper .container main {
   margin-top: 120px;
   display: flex;
@@ -241,6 +244,58 @@ a {
 .wrapper .container .about__us .about__body ul li {
   list-style-type: decimal;
 }
+.wrapper .container .services {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapper .container .services .services__header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapper .container .services .services__header h1 {
+  font-size: 48px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .container .services .services__header p {
+  font-size: 22px;
+  font-weight: "SFPro-Light";
+  color: #3F3F3F;
+  max-width: 45%;
+  font-weight: 100;
+}
+.wrapper .container .services .services__body .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.wrapper .container .services .services__body .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 536px;
+  height: 330px;
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+.wrapper .container .services .services__body .cards .card img {
+  width: 180px;
+  height: 140px;
+}
+.wrapper .container .services .services__body .cards .card h1 {
+  font-size: 22px;
+  font-weight: "SFPro-Regular";
+}
+.wrapper .container .services .services__body .cards .card p {
+  font-size: 16px;
+  font-weight: "SFPro-Light";
+  max-width: 100%;
+  color: #6B6B6B;
+}
 .wrapper .banner {
   background: url(../images/backgrounds/banner.png) center no-repeat;
   height: 520px;
@@ -291,4 +346,60 @@ a {
 .wrapper .order .btn:hover {
   box-shadow: #cbc8c8 0px 2px 30px;
   transition: 0.3s ease;
+}
+.wrapper .questions__container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.wrapper .questions__container .questions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .questions__container .questions .questions__logo h1 {
+  font-size: 48px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .questions__container .questions .questions__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .questions__container .questions .questions__body .question__side {
+  width: 640px;
+  height: 384px;
+  position: relative;
+  left: 50px;
+  z-index: 999;
+  border: 0.5px solid rgba(203, 200, 200, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.wrapper .questions__container .questions .questions__body .question__side .question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(203, 200, 200, 0.3);
+}
+.wrapper .questions__container .questions .questions__body .question__side .question .ellipse {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 20px;
+}
+.wrapper .questions__container .questions .questions__body .answer__side {
+  width: 648px;
+  height: 472px;
+  position: relative;
+  background-color: #FAFBFF;
+  box-shadow: 3px 3px 4px #FAFBFF;
+  border: 1px solid #cbc8c8;
+  border-radius: 16px;
 }

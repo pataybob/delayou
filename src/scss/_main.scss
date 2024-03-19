@@ -3,7 +3,10 @@
     display: flex;
     flex-direction: column;
     gap: 120px;
+    // Содержимое контейнера
+    // _____________________
     .container{
+        max-width: $containerWidth;
         main{  
             margin-top: 120px;
             display: flex;
@@ -107,7 +110,63 @@
                 }
             }
         }
+        .services{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .services__header{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                h1{
+                    font-size: 48px;
+                    font-family: $bold;
+                }
+                p{
+                    font-size: 22px;
+                    font-weight: $light;
+                    color: #3F3F3F;
+                    max-width: 45%;
+                    font-weight: 100;
+                }
+            }
+            .services__body{
+                .cards{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 50px;
+                    .card{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        width: 536px;
+                        height: 330px;
+                        background-color: #FCFCFC;
+                        border-radius: 10px;
+                        padding: 30px 20px;
+                        img{
+                            width: 180px;
+                            height: 140px;
+                        }
+                        h1{
+                            font-size: 22px;
+                            font-weight: $regular;
+                        }
+                        p{
+                            font-size: 16px ;
+                            font-weight: $light;
+                            max-width: 100%;
+                            color: #6B6B6B;
+                        }
+                    }
+                }
+            }
+        }
     }
+    // Выходящее за контейнер
+    // ______________________
     .banner{
         background: url(../images/backgrounds/banner.png) center no-repeat;
         height: 520px;
@@ -161,5 +220,67 @@
             }
         }
         
+    }
+    .questions__container{
+        width: 1440px;
+        margin: 0 auto;
+        .questions{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .questions__logo{
+                h1{
+                    font-size: 48px;
+                    font-family: $bold;
+                }
+            }
+            .questions__body{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .question__side{
+                    width: 640px;
+                    height: 384px;
+                    position: relative;
+                    left: 50px;
+                    z-index: 999;
+                    border: 0.5px solid rgb(203, 200, 200 , 0.3);;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    background-color: $whiteColor;
+                    .question{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 0 10px;
+                        align-items: center;
+                        border-bottom: 0.5px solid rgb(203, 200, 200 , 0.3);;
+                        .ellipse{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 20px 10px;
+                            gap: 20px;
+                        
+                        }
+                    }
+    
+    
+                }
+                .answer__side{
+                    width: 648px;
+                    height: 472px;
+                    position: relative;
+                    background-color: #FAFBFF;
+                    box-shadow: 3px 3px 4px #FAFBFF;
+                    border: 1px solid #cbc8c8;
+                    border-radius: 16px;
+                }
+            }
+        }
     }
 }
