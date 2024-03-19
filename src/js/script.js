@@ -9,3 +9,18 @@ function showAnswer(questionNumber) {
         selectedAnswer.style.display = 'block';
     }
 }
+
+
+let selectedElement = null;
+
+function toggleColor(element) {
+    if (selectedElement) {
+        selectedElement.classList.remove('selected');
+    }
+    if (element !== selectedElement) {
+        element.classList.add('selected');
+        selectedElement = element;
+    } else {
+        selectedElement = null;
+    }
+}

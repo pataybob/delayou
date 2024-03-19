@@ -344,7 +344,7 @@ a {
   text-decoration: underline;
 }
 .wrapper .order .btn:hover {
-  box-shadow: #cbc8c8 0px 2px 30px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 30px;
   transition: 0.3s ease;
 }
 .wrapper .questions__container {
@@ -385,6 +385,7 @@ a {
   padding: 0 10px;
   align-items: center;
   border-bottom: 0.5px solid rgba(203, 200, 200, 0.3);
+  cursor: pointer;
 }
 .wrapper .questions__container .questions .questions__body .question__side .question .ellipse {
   display: flex;
@@ -393,6 +394,15 @@ a {
   align-items: center;
   padding: 20px 10px;
   gap: 20px;
+}
+.wrapper .questions__container .questions .questions__body .question__side .selected {
+  background-color: #FAFBFF !important;
+}
+.wrapper .questions__container .questions .questions__body .question__side .selected .ellipse svg circle {
+  fill: #624AFF;
+}
+.wrapper .questions__container .questions .questions__body .question__side .selected svg path {
+  stroke: #624AFF;
 }
 .wrapper .questions__container .questions .questions__body .answers {
   width: 648px;

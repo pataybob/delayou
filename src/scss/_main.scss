@@ -215,7 +215,7 @@
                 
             }
             &:hover{
-                box-shadow: #cbc8c8 0px 2px 30px;
+                box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 30px;
                 transition: 0.3s ease;
             }
         }
@@ -257,7 +257,8 @@
                         justify-content: space-between;
                         padding: 0 10px;
                         align-items: center;
-                        border-bottom: 0.5px solid rgb(203, 200, 200 , 0.3);;
+                        border-bottom: 0.5px solid rgb(203, 200, 200 , 0.3);
+                        cursor: pointer;
                         .ellipse{
                             display: flex;
                             flex-direction: row;
@@ -266,6 +267,21 @@
                             padding: 20px 10px;
                             gap: 20px;
                         
+                        }
+                    }
+                    .selected{
+                        background-color: #FAFBFF !important;
+                        .ellipse{
+                            svg{
+                                circle{
+                                    fill: #624AFF;
+                                }
+                            }
+                        }
+                        svg{
+                            path{
+                                stroke: #624AFF;
+                            }
                         }
                     }
     
@@ -294,8 +310,10 @@
                             font-family: $regular;
                         }
                     }
+                    
                     #answer2{
                         padding: 50px 100px;
+                        
                         h1{
                             font-size: 18px;
                             font-family: $bold;

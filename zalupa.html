@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анимация появления текста</title>
+<style>
+    .text {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+    .show {
+        opacity: 1 !important;
+    }
+</style>
+</head>
+<body>
+
+<div class="buttonBlock">
+    <button onclick="showText()">Показать текст</button>
+</div>
+
+<div class="textElement text">Текст, который будет появляться с анимацией</div>
+
+<script>
+    function showText() {
+        var textElements = document.querySelectorAll('.textElement');
+        textElements.forEach(function(element) {
+            element.classList.add('show'); // Добавляем класс для анимации появления
+        });
+    }
+</script>
+
+</body>
+</html>
