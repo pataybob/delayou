@@ -348,7 +348,7 @@ a {
   transition: 0.3s ease;
 }
 .wrapper .questions__container {
-  width: 1440px;
+  width: 1340px;
   margin: 0 auto;
 }
 .wrapper .questions__container .questions {
@@ -394,7 +394,7 @@ a {
   padding: 20px 10px;
   gap: 20px;
 }
-.wrapper .questions__container .questions .questions__body .answer__side {
+.wrapper .questions__container .questions .questions__body .answers {
   width: 648px;
   height: 472px;
   position: relative;
@@ -402,4 +402,67 @@ a {
   box-shadow: 3px 3px 4px #FAFBFF;
   border: 1px solid #cbc8c8;
   border-radius: 16px;
+}
+.wrapper .questions__container .questions .questions__body .answers .hidden {
+  display: none;
+}
+.wrapper .questions__container .questions .questions__body .answers #answer1 {
+  padding: 50px 100px;
+}
+.wrapper .questions__container .questions .questions__body .answers #answer1 h1 {
+  font-size: 18px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer1 p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "SFPro-Regular";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer2 {
+  padding: 50px 100px;
+}
+.wrapper .questions__container .questions .questions__body .answers #answer2 h1 {
+  font-size: 18px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer2 p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "SFPro-Regular";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer3 {
+  padding: 50px 100px;
+}
+.wrapper .questions__container .questions .questions__body .answers #answer3 h1 {
+  font-size: 18px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer3 p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "SFPro-Regular";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer4 {
+  padding: 50px 100px;
+}
+.wrapper .questions__container .questions .questions__body .answers #answer4 h1 {
+  font-size: 18px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer4 p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "SFPro-Regular";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer5 {
+  padding: 50px 100px;
+}
+.wrapper .questions__container .questions .questions__body .answers #answer5 h1 {
+  font-size: 18px;
+  font-family: "SFPro-Bold";
+}
+.wrapper .questions__container .questions .questions__body .answers #answer5 p {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "SFPro-Regular";
 }

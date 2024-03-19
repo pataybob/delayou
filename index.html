@@ -168,35 +168,35 @@
                 </div>
                 <div class="questions__body">
                     <div class="question__side">
-                        <div class="question">
-                            <div class="ellipse active">
+                        <div class="question " onclick="showAnswer(1)">
+                            <div class="ellipse active" >
                                 <img src="./src/images/Ellipse.png" alt="">
                                 <p>Что делать если заказ не удовлетворяет вас</p>
                             </div>
                             <img src="/src/images/arrow-right.png" alt="">
                         </div>
-                        <div class="question">
+                        <div class="question" onclick="showAnswer(2)">
                             <div class="ellipse active">
                                 <img src="./src/images/Ellipse.png" alt="">
                                 <p>Я хочу чтобы разработка проводилась при мне, что мне для этого сделать?</p>
                             </div>
                             <img src="/src/images/arrow-right.png" alt="">
                         </div>
-                        <div class="question">
+                        <div class="question" onclick="showAnswer(3)">
                             <div class="ellipse active">
                                 <img src="./src/images/Ellipse.png" alt="">
                                 <p>Какие платформы будут использоваться при разработке?</p>
                             </div>
                             <img src="/src/images/arrow-right.png" alt="">
                         </div>
-                        <div class="question">
+                        <div class="question" onclick="showAnswer(4)">
                             <div class="ellipse active">
                                 <img src="./src/images/Ellipse.png" alt="">
                                 <p>Как понять какие сроки будут при разработке моего проекта?</p>
                             </div>
                             <img src="/src/images/arrow-right.png" alt="">
                         </div>
-                        <div class="question">
+                        <div class="question" onclick="showAnswer(5)">
                             <div class="ellipse active">
                                 <img src="./src/images/Ellipse.png" alt="">
                                 <p>Что мне сделать чтобы поддержать вас?</p>
@@ -204,8 +204,35 @@
                             <img src="/src/images/arrow-right.png" alt="">
                         </div>
                     </div>
-                    <div class="answer__side">
-                        
+                    <div class="answers">
+                        <div id="answer1" class="answer hidden">
+                            <h1>Что делать если заказ не удовлетворяет вас?</h1>
+                            <p>Нужно сообщить об этом ведущему куратору проекта что в нём есть нюансы и нужно внести правки, после этого вы созвонитесь в звонке на более удобной для вас платформе.</p>
+                            <p>Далее вам нужно будет на демонстрации экрана дать понять какие правки нужно будет внести, куратор запишет это и передаст комнаде разработчиков!</p>
+                        </div>
+                        <div id="answer2" class="answer hidden">
+                            <h1>Я хочу чтобы разработка проводилась при мне, что мне для этого сделать?</h1>
+                            <p>Достаточно спросить куратора проекта в чате есть ли возможность поприсутствовать в рабочем процессе.</p>
+                            <p>Важно помнить что возможность будет не всегда в целях того чтобы команда разработчиков не отвлекалась и могла исправно выполнять свои обязанности!</p>
+                        </div>
+                        <div id="answer3" class="answer hidden">
+                            <h1>Какие платформы будут использоваться при разработке?</h1>
+                            <p>Платформы Low-code/No-code такие как: Zoho Creator, Kissflow, Caspio, AppSheet.
+                                Платформы Open-source такие как: Odoo, OpenERP, SugarCRM, vTiger CRM.
+                                Платные платформы такие как: Salesforce, Microsoft Dynamic 365, SAP Business ByDesign, Oracle NetSuite.
+                                Фреймфорки такие как: Spring Boot, Django, Ruby on Rails.</p>
+                            <p><strong>Рекомендуется</strong> ознакомиться с обзорами платформ, сравнить их функции и цены, а также попробовать демо-версии, чтобы выбрать платформу, которая лучше всего соответствует вашим потребностям.</p>
+                        </div>
+                        <div id="answer4" class="answer hidden">
+                            <h1>Как понять какие сроки будут при разработке моего проекта?</h1>
+                            <p>После оплаты заказа и его разбора с куратором и другими разработчиками будут оглашены примерные сроки выполнения вашего заказа.</p>
+                          
+                        </div>
+                        <div id="answer5" class="answer hidden">
+                            <h1>Что мне сделать чтобы поддержать вас?</h1>
+                            <p>Достаточно после выполнения заказа по тем же реквизитам по которым вы будете производить оплату по заказу добавить комментарий с суммой которую хотите дополнительно отправить нам в целях поддержки, мы вам будем очень благодарны и вы останитесь у нас в сердечке очень надолго <З</p>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -213,6 +240,8 @@
             
         
     </div>
+
+    <script src="./src/js/script.js"></script>
 
 </body>
 </html>

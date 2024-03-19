@@ -222,7 +222,7 @@
         
     }
     .questions__container{
-        width: 1440px;
+        width: 1340px;
         margin: 0 auto;
         .questions{
             display: flex;
@@ -271,7 +271,7 @@
     
     
                 }
-                .answer__side{
+                .answers{
                     width: 648px;
                     height: 472px;
                     position: relative;
@@ -279,6 +279,69 @@
                     box-shadow: 3px 3px 4px #FAFBFF;
                     border: 1px solid #cbc8c8;
                     border-radius: 16px;
+                    .hidden{
+                        display: none;
+                    }
+                    #answer1{
+                        padding: 50px 100px;
+                        h1{
+                            font-size: 18px;
+                            font-family: $bold;
+                        }
+                        p{
+                            margin-top: 50px;
+                            font-size: 16px;
+                            font-family: $regular;
+                        }
+                    }
+                    #answer2{
+                        padding: 50px 100px;
+                        h1{
+                            font-size: 18px;
+                            font-family: $bold;
+                        }
+                        p{
+                            margin-top: 50px;
+                            font-size: 16px;
+                            font-family: $regular;
+                        }
+                    }
+                    #answer3{
+                        padding: 50px 100px;
+                        h1{
+                            font-size: 18px;
+                            font-family: $bold;
+                        }
+                        p{
+                            margin-top: 50px;
+                            font-size: 16px;
+                            font-family: $regular;
+                        }
+                    }
+                    #answer4{
+                        padding: 50px 100px;
+                        h1{
+                            font-size: 18px;
+                            font-family: $bold;
+                        }
+                        p{
+                            margin-top: 50px;
+                            font-size: 16px;
+                            font-family: $regular;
+                        }
+                    }
+                    #answer5{
+                        padding: 50px 100px;
+                        h1{
+                            font-size: 18px;
+                            font-family: $bold;
+                        }
+                        p{
+                            margin-top: 50px;
+                            font-size: 16px;
+                            font-family: $regular;
+                        }
+                    }
                 }
             }
         }
