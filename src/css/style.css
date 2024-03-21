@@ -569,3 +569,115 @@ a {
   font-size: 13px;
   font-family: "SFPro-Regular";
 }
+.wrapper .footer {
+  background: linear-gradient(to right, #040019, #14007F);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 300px;
+  padding: 50px;
+}
+.wrapper .footer .adress {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #fff;
+}
+.wrapper .footer .adress .footer__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.wrapper .footer .adress .footer__logo h1 {
+  font-size: 40px;
+  font-family: "SFPro-Regular";
+}
+.wrapper .footer .adress .adress__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.wrapper .footer .adress .adress__item a {
+  font-size: 16px;
+  font-family: "SFPro-Light";
+}
+.wrapper .footer .adress .adress__item a:hover {
+  color: #624AFF;
+  transition: all 0.4s ease-out;
+}
+.wrapper .footer .category {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .footer .category h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "SFPro-Light";
+}
+.wrapper .footer .category a {
+  color: #fff;
+}
+.wrapper .footer .category a:hover {
+  color: #624AFF;
+  transition: all 0.4s ease-out;
+}
+.wrapper .footer .socials .socials__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.wrapper .footer .socials .socials__logo h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "SFPro-Light";
+}
+.wrapper .footer .socials .socials__logo p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "SFPro-Light";
+}
+.wrapper .footer .socials .input {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  width: 440px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.wrapper .footer .socials .input input {
+  color: #6B6B6B;
+  font-size: 18px;
+  border: none;
+  width: 300px;
+  height: 40px;
+}
+.wrapper .footer .socials .input button {
+  background-color: #3026A1;
+  padding: 9px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .footer .socials .input button:hover {
+  background-color: #14007F;
+  transition: 0.3s ease;
+}
+.wrapper .footer .socials .socials__block {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.wrapper .footer .socials .socials__block .social__item:hover {
+  scale: 1.1;
+  transition: all 0.4s ease-out;
+}
