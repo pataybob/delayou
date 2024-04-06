@@ -1,0 +1,146 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998; /* Ниже, чем у popup, чтобы overlay был под popup */
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 9999;
+    border-radius: 105px 15px 105px 15px;
+    #closePopUp{
+        display: inline-block;
+        cursor: pointer;
+        transform: scale(2.5);
+        color: $blackColor;
+        &:hover{
+            color: $buttonsColor;
+            transform:scale(5);
+            transition: 0.3s ease;
+        }
+    }
+    
+  }
+  
+  .popup-content {
+    padding: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: $buttonsColor;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .registration{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    margin: 0 auto;
+    .registration__header{
+        display: flex;
+        flex-direction: column;
+        gap: 1.9rem;
+        h1{
+            font-size: 2.5rem;
+            font-family: $bold;
+
+        }
+        p{
+            font-size: 1.3rem;
+            font-family: $regular;
+            span{
+                font-size: 1.3rem;
+                color: #36308E;
+                font-family: $bold;
+            }
+        }
+    }
+    .registration__body{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        margin: 1.3rem;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            input{
+                margin: 0.5rem;
+                width: 24rem;
+                height: 3rem;
+                border-radius: 10px;
+                border: #1F1C4F 1px solid;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                padding-left: 0.8rem;
+                font-size: 1rem;
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+                background-color: $buttonsColor;
+                color: $whiteColor;
+                font-family: $bold;
+                cursor: pointer;
+                &:hover{
+                    background-color: #1F1C4F;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+    .registration__footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        p{
+            font-size: 0.8rem;
+            max-width: 45%;
+            span{
+                font-size: 0.8rem;
+                color: #4DB993;
+                cursor: pointer;
+            }
+        }
+        .comeback{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            min-width: 100%;
+            gap: 0.6rem;
+            p{
+                font-size: 0.85rem;
+                font-family: $regular;
+                
+            }
+        }
+    }
+}

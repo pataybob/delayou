@@ -1,0 +1,180 @@
+.header{
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: $blackColor;
+    height: 136px;
+    width: 85rem;
+    border-radius: 35px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    .header__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        width: 15rem;
+        .text__logo{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h1{
+                color: $whiteColor;
+                font-family: $bold;
+                font-size: 1.5rem ;
+            }
+            p{
+                color: $whiteColor;
+                font-size: 1rem;
+            }
+        }
+        
+    }
+    .after{
+        display: block;
+        &::after{
+            content: "";
+            height: 1px;
+            width: 53px;
+            display: block;
+            background-color: #FFF;
+            transform: rotate(90deg);
+        }
+    }
+    .header__nav{
+        display: flex;
+        gap:40px;
+        li{
+            color: #FFF;
+            font-size: 14px;
+            font-family: $regular;
+            font-weight: 300;
+            a:hover{
+                color: $secondaryLightColor;
+                transition: 0.3s ease;
+            }
+
+        }
+    }
+    .header__btn a{
+        position: relative;
+        right: 20px;
+        background-color: #FFF;
+        padding: 10px 60px; //
+        border-radius: 8px;
+        color: $blackColor;
+        cursor: pointer;
+        padding: 15px 35px;
+        a{
+            color: #010101;
+            font-size: 14px;
+        }
+        &:hover{
+            transition: 0.3s ease;
+            color: $whiteColor;
+            background-color: $buttonsColor;
+            box-shadow: 0 4px 29px rgb(255, 255, 255, 0.25); //
+        }
+
+    }
+    // .burger{
+    //     display: none;
+    //     position: relative;
+    //     z-index: 99999999999;
+    //     align-items: center;
+    //     justify-content: flex-end;
+    //     width: 30px;
+    //     height: 18px;
+    //     span{
+    //         height: 2px !important; 
+    //         width: 80%;
+    //         transform: scale(1);
+    //         background-color: $whiteColor;
+    //     }
+    //     &::before , &::after{
+    //         content:"";
+    //         position: absolute;
+    //         height: 2px;
+    //         width: 100%;
+    //         background-color: $whiteColor;
+    //         transition: all 0.3s ease 0s;
+    //     }
+    //     &::before{
+    //         top: 0 !important;
+    //     }
+        
+    //     &::after{
+    //         bottom: 0 !important;
+    //     }
+    //     &.activeburg span{
+    //         transform: scale(0) !important;
+    //     }
+    //     &.activeburg::before{
+    //         top: 50% !important;
+    //         transform: rotate(-45deg) translate(0,-50%);
+    //     }
+    //     &.activeburg::after{
+    //         bottom: 50% !important;
+    //         transform: rotate(45deg) translate(0,50%);
+    //     }
+    // }
+}        
+
+// ___________________________________________ BURGER
+
+
+/* Скрытие элементов меню при ширине экрана менее 768px */
+
+
+.burger::before{
+    top: 0;
+}
+
+.burger::after{
+    bottom: 0;
+}
+
+.burger{
+    display: none;
+    position: relative;
+    z-index: 99999999999;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    span{
+        height: 2px !important; 
+        width: 80%;
+        transform: scale(1);
+        background-color: $blackColor;
+    }
+    &::before , &::after{
+        content:"";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $blackColor;
+        transition: all 0.3s ease 0s;
+    }
+    &::before{
+        top: 0 !important;
+    }
+    
+    &::after{
+        bottom: 0 !important;
+    }
+    &.activeburg span{
+        transform: scale(0) !important;
+    }
+    &.activeburg::before{
+        top: 50% !important;
+        transform: rotate(-45deg) translate(0,-50%);
+    }
+    &.activeburg::after{
+        bottom: 50% !important;
+        transform: rotate(45deg) translate(0,50%);
+    }
+}

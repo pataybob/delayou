@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delayou</title>
+    <link rel="shortcut icon" href="./src/images/icons/favicon-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+</head>
+<body>
+    <div id="overlay" class="overlay"></div> <!-- Добавлен новый элемент overlay -->
+    <div id="wrapper" class="wrapper">
+        <div class="container">
+            <div class="burger">
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+            <header class="header">
+                <div class="header__logo">
+                    <div class="logo__img">
+                        <img src="./src/images/icons/header-logo.svg" alt="logotip">
+                    </div>
+                    <div class="text__logo">
+                        <h1>Delayou</h1>
+                        <p>Оптимизация бизнес процессов</p>
+                    </div>
+                </div>
+                <div class="after"></div>
+                <ul class="header__nav">
+                    <li class="header__item"><a href="#">О нас</a></li>
+                    <li class="header__item"><a href="#">Преимущества</a></li>
+                    <li class="header__item"><a href="#">В чём мы лучше</a></li>
+                    <li class="header__item"><a href="#">FAQ</a></li>
+                    <li class="header__item"><a href="#">Оформление заказа</a></li>
+                </ul>
+                <div class="after"></div>
+                <div class="header__btn">
+                    <a href="#" id="openPopUp">Сделать заказ</a>
+                </div>
+            </header>
+         <main class="main">
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                  <span id="closePopUp" style="float: inline-end; cursor: pointer; transform: scale(2.5);">&times;</span>
+                  <div class="registration">
+                    <div class="registration__header">
+                        <h1>Начните делать свой проект с нами уже сегодня </h1>
+                        <p>Пройдите бесплатную консультацию с нашими сейлзами и <span>получите скидку 10%</span></p>
+                    </div>
+                    <div class="registration__body">
+                        <form action="/submit_form.php" method="POST">
+                            <input placeholder="Ваше имя" type="text" id="username" name="username" required>
+                        
+                            <input placeholder="Электронная почта" type="email" id="email" name="email">
+    
+                            <input placeholder="Номер телефона" type="number" id="number" name="number" required>
+                        
+                            <input class="button" type="submit" value="Начать проект">
+                        </form>
+    
+                    </div>
+                    <div class="registration__footer ">
+                        <p>Отправляя форму, вы принимаете «<span> Соглашение об обработке персональных данных </span>» и условия «<span> Оферты</span>», а также соглашаетесь с « <span>Условиями использования</span> »</p>
+                        <div class="comeback">
+                            <img src="./src/images/wallet.svg" alt="">
+                            <p>Вернём деньги в течение первых двух недель, если передумаете</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+            <div class="main__head">
+                <h1>Delayou — перспективная ERP/BPM/CRM-система, объединяющая сотрудников и их задачи в одном месте</h1>
+                <p>Создаём. Улучшаем. Продвигаем.</p>
+            </div>
+            <div class="main__body">
+                <div class="adv__side">
+                    <ul class="advantages">
+                        <div class="ul__item">
+                            <img src="./src/images/icons/list-style.svg" alt="">
+                            <li class="adv__item">
+                                Одновременная стабильная работа десятков тысяч пользователей за счет микросервисной 
+                                архитектуры и гибкого распределения нагрузки
+                            </li>
+                        </div>
+                        <div class="ul__item">
+                            <img src="./src/images/icons/list-style.svg" alt="">
+                            <li class="adv__item">
+                                Открытый API для интеграции со сторонними решениями
+                            </li>
+                        </div>
+                        <div class="ul__item">
+                            <img src="./src/images/icons/list-style.svg" alt="">
+                            <li class="adv__item">
+                                Базовые настроенные модули для быстрого старта без доработки
+                            </li>
+                        </div>
+                        <div class="ul__item">
+                            <img src="./src/images/icons/list-style.svg" alt="">
+                            <li class="adv__item">
+                                Редактор для гибкой настройки бизнес-процессов организации
+                            </li>
+                        </div>
+                        <div class="ul__item">
+                            <img src="./src/images/icons/list-style.svg" alt="">
+                            <li class="adv__item">
+                                Поддержка отказоустойчивых и балансировочных кластеров для непрерывности процессов
+                            </li>
+                        </div>
+                        <div class="ul__item">
+                            <img src="./src/images/icons/list-style.svg" alt="">
+                            <li class="adv__item">
+                                И не только, с нами вас ждёт только болше!
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="photo__side">
+                    <img src="./src/images/advantages.png" alt="advantages">
+                </div>
+            </div>
+            <div class="main__footer">
+                <div class="advantages__container">
+                    <div class="duration adv__item">
+                        <h1>8 лет</h1>
+                        <p>Работаем в этой сфере</p>
+
+                    </div>
+                    <div class="staff adv__item">
+                        <h1>9</h1>
+                        <p>сотрудников в штате</p>
+
+
+                    </div>
+                    <div class="partners adv__item">
+                        <h1>10+ компаний-партнёров</h1>
+                        <p>которые уже сотрудничают с нами</p>
+                    </div>
+                </div>
+            </div>
+         </main>
+        </div>
+        <!-- banner -->
+        <div class="banner block hidden">
+            <div class="content">
+                <div class="promo">
+                    <h1>УПРАВЛЯЙ БИЗНЕСОМ <span>ЭФФЕКТИВНО</span></h1>
+                </div>
+                <div class="banner-png">
+                    <img src="./src/images/banner-illustation.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about__us">
+                <div class="about__header">
+                    <h1>Наши преимущества  в данной отрасли</h1>
+                    <p>С нами вы создадите с нуля свой проект полностью учавствуя в его разработке вместе с нашими специалистами, вы сможете вносить свои правки при надобности в любое удобное время через постоянную связь с нами.</p>
+                </div>
+                <div class="about__body block hidden">
+                    <div class="guy__photo">
+                        <img src="./src/images/guy.png" alt="">
+                    </div>
+                    <div class="info__side">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta maiores eius eos consequatur sed, non aliquid voluptatem dolores esse velit, natus cumque facilis, possimus nobis porro exercitationem sunt pariatur tempora!</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laboriosam modi earum. Eius, iusto! Provident.</li>
+                        </ul>
+                    </div>
+                    <div class="girl__photo">
+                        <img src="./src/images/girl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+                <div class="order block hidden">
+                    <h1>Готовы попробовать сделать заказ прямо сейчас?</h1>
+                    <p>Оставьте заявку, и мы ответим Вам в течении 15 минут после её получения</p>
+                    <div class="btn"><a href="#"> Хочу попробовать!</a></div>
+                </div>
+        <div class="container">
+            <div class="why__we">
+                <div class="why__we-head">
+                    <h1>Часто задаваемые вопросы!</h1>
+                    <p>????? Учеба без границ %%%%%</p>
+                </div>
+                <div class="why__we-body block hidden">
+                    <div class="info__side">
+                        <h1>Почему  жы  выбирают именно нас?</h1>
+                        <p>Практический опыт показывает, что постоянное информационно-техническое обеспечение нашей деятельности требует от нас системного анализа новых предложений? Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для системы масштабного изменения ряда параметров. С другой стороны постоянный количественный рост и сфера нашей активности требует от нас системного анализа позиций, занимаемых участниками в отношении поставленных задач.</p>
+                        <a href="#">Начать что то!</a>
+                    </div>
+                    <div class="photo__side">
+                        <img src="./src/images/whyWe-logo.png" alt="">
+                    </div>
+                </div>
+                <div class="why__we-cards block hidden">
+                    <div class="cards__container">
+                        <div class="why__we-card grid-card1">
+                            <img src="./src/images/icons/why-we-card1.svg" alt="">
+                            <h2>Персонализированный подход</h2>
+                            <p>Практический опыт показывает, что постоянное информационно-техническое обеспечение нашей деятельности требует от нас системного анализа новых предложений? Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно</p>
+                        </div>
+
+                        <div class="why__we-card grid-card2">
+                            <img src="./src/images/icons/why-we-card1.svg" alt="">
+                            <h2>Персонализированный подход</h2>
+                            <p>Практический опыт показывает, что постоянное информационно-техническое обеспечение нашей деятельности требует от нас системного анализа новых предложений? Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно</p>
+                        </div>
+
+                        <div class="why__we-card grid-card3">
+                            <img src="./src/images/icons/why-we-card1.svg" alt="">
+                            <h2>Персонализированный подход</h2>
+                            <p>Практический опыт показывает, что постоянное информационно-техническое обеспечение нашей деятельности требует от нас системного анализа новых предложений? Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services__header">
+                    <h1>Почему мы? И в чём мы лучше.</h1>
+                    <p>Мы предоставляем профессиональные услуги, благодаря нашей команде опытных специалистов, которые постоянно совершенствуют свои знания и навыки. Мы также гарантируем индивидуальный подход к каждому клиенту, чтобы предоставить наиболее эффективное и удобное решение для его потребностей и целей.</p>
+                    <div class="services__body block hidden">
+                        <div class="cards">
+                            <div class="firstCard card">
+                                <img src="./src/images/card-1.png" alt="" >
+                                <h1>Lorem, ipsum dolor.</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi corporis, exercitationem est debitis maxime.</p>
+                            </div>
+                            <div class="secondCard card">
+                                <img src="./src/images/card-2.png" alt="" >
+                                <h1>Lorem, ipsum dolor.</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi corporis, exercitationem est debitis maxime.</p>
+                            </div>
+                            <div class="thirdCard card">
+                                <img src="./src/images/card-3.png" alt="" >
+                                <h1>Lorem, ipsum dolor.</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quasi corporis, exercitationem est debitis maxime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions__container">
+            <div class="questions">
+                <div class="questions__logo">
+                    <h1>Часто задаваемые вопросы</h1>
+                </div>
+                <div class="questions__body block hidden">
+                    <div class="question__side">
+                        <div class="question" onclick="showAnswer(1) ; toggleColor(this)" >
+                            <div class="ellipse" >
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12.6699" r="12" fill="#5EE5B5" fill-opacity="1"/>
+                                </svg>
+                                <p>Что делать если заказ не удовлетворяет вас</p>
+                            </div>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99997 4.66992L16 12.6699L7.99997 20.6699" stroke="#5EE5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </div>
+                        <div class="question " onclick="showAnswer(2) ; toggleColor(this)" >
+                            <div class="ellipse active">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12.6699" r="12" fill="#5EE5B5" fill-opacity="1"/>
+                                </svg>
+                                <p>Я хочу чтобы разработка проводилась при мне, что мне для этого сделать?</p>
+                            </div>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99997 4.66992L16 12.6699L7.99997 20.6699" stroke="#5EE5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </div>
+                        <div class="question " onclick="showAnswer(3) ; toggleColor(this);">
+                            <div class="ellipse active">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12.6699" r="12" fill="#5EE5B5" fill-opacity="1"/>
+                                </svg>
+                                <p>Какие платформы будут использоваться при разработке?</p>
+                            </div>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99997 4.66992L16 12.6699L7.99997 20.6699" stroke="#5EE5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </div>
+                        <div class="question " onclick="showAnswer(4) ; toggleColor(this)" >
+                            <div class="ellipse active">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12.6699" r="12" fill="#5EE5B5" fill-opacity="1"/>
+                                </svg>
+                                <p>Как понять какие сроки будут при разработке моего проекта?</p>
+                            </div>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99997 4.66992L16 12.6699L7.99997 20.6699" stroke="#5EE5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </div>
+                        <div class="question " onclick="showAnswer(5) ; toggleColor(this)" >
+                            <div class="ellipse active">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12.6699" r="12" fill="#5EE5B5" fill-opacity="1"/>
+                                </svg>
+                                <p>Что мне сделать чтобы поддержать вас?</p>
+                            </div>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99997 4.66992L16 12.6699L7.99997 20.6699" stroke="#5EE5B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </div>
+                    </div>
+                    <div class="answers">
+                        <div id="answer1" class="answer" >
+                            <h1>Что делать если заказ не удовлетворяет вас?</h1>
+                            <p>Нужно сообщить об этом ведущему куратору проекта что в нём есть нюансы и нужно внести правки, после этого вы созвонитесь в звонке на более удобной для вас платформе.</p>
+                            <p>Далее вам нужно будет на демонстрации экрана дать понять какие правки нужно будет внести, куратор запишет это и передаст комнаде разработчиков!</p>
+                        </div>
+                        <div id="answer2" class="answer hiddens">
+                            <h1>Я хочу чтобы разработка проводилась при мне, что мне для этого сделать?</h1>
+                            <p>Достаточно спросить куратора проекта в чате есть ли возможность поприсутствовать в рабочем процессе.</p>
+                            <p>Важно помнить что возможность будет не всегда в целях того чтобы команда разработчиков не отвлекалась и могла исправно выполнять свои обязанности!</p>
+                        </div>
+                        <div id="answer3" class="answer hiddens">
+                            <h1>Какие платформы будут использоваться при разработке?</h1>
+                            <p>Платформы Low-code/No-code такие как: Zoho Creator, Kissflow, Caspio, AppSheet.
+                                Платформы Open-source такие как: Odoo, OpenERP, SugarCRM, vTiger CRM.
+                                Платные платформы такие как: Salesforce, Microsoft Dynamic 365, SAP Business ByDesign, Oracle NetSuite.
+                                Фреймфорки такие как: Spring Boot, Django, Ruby on Rails.</p>
+                            <p><strong>Рекомендуется</strong> ознакомиться с обзорами платформ, сравнить их функции и цены, а также попробовать демо-версии, чтобы выбрать платформу, которая лучше всего соответствует вашим потребностям.</p>
+                        </div>
+                        <div id="answer4" class="answer hiddens">
+                            <h1>Как понять какие сроки будут при разработке моего проекта?</h1>
+                            <p>После оплаты заказа и его разбора с куратором и другими разработчиками будут оглашены примерные сроки выполнения вашего заказа.</p>
+                          
+                        </div>
+                        <div id="answer5" class="answer hiddens">
+                            <h1>Что мне сделать чтобы поддержать вас?</h1>
+                            <p>Достаточно после выполнения заказа по тем же реквизитам по которым вы будете производить оплату по заказу добавить комментарий с суммой которую хотите дополнительно отправить нам в целях поддержки, мы вам будем очень благодарны и вы останитесь у нас в сердечке очень надолго &lt;</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="registration">
+                <div class="registration__header">
+                    <h1>Начните делать свой проект с нами уже сегодня </h1>
+                    <p>Пройдите бесплатную консультацию с нашими сейлзами и <span>получите скидку 10%</span></p>
+                </div>
+                <div class="registration__body block hidden">
+                    <form action="/submit_form.php" method="POST">
+                        <input placeholder="Ваше имя" type="text" id="username" name="username" required>
+                    
+                        <input placeholder="Электронная почта" type="email" id="email" name="email">
+
+                        <input placeholder="Номер телефона" type="number" id="number" name="number" required>
+                    
+                        <input class="button" type="submit" value="Начать проект">
+                    </form>
+
+                </div>
+                <div class="registration__footer ">
+                    <p>Отправляя форму, вы принимаете «<span> Соглашение об обработке персональных данных </span>» и условия «<span> Оферты</span>», а также соглашаетесь с « <span>Условиями использования</span> »</p>
+                    <div class="comeback">
+                        <img src="./src/images/wallet.svg" alt="">
+                        <p>Вернём деньги в течение первых двух недель, если передумаете</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="adress">
+                    <div class="footer__logo">
+                        <img src="./src/images/icons/header-logo.svg" alt="" width="65" height="65">
+                        <h1>Delayou</h1>
+                    </div>
+                    <div class="street adress__item">
+                        <img src="./src/images/icons/geo.svg" alt="">
+                        <a href="#">No: 12 A, East Uttara Street, Dhaka, MD, BD 4508 Jatrabary</a>
+                    </div>
+                    <div class="number adress__item">
+                        <img src="./src/images/icons/phone.svg" alt="">
+                        <a href="#">000-123-456789</a>
+                    </div>
+                    <div class="mail adress__item">
+                        <img src="./src/images/icons/mail.svg" alt="">
+                        <a href="#">info@example.com</a>
+                    </div>
+
+                </div>
+                <div class="category">
+                    <h1>Категории</h1>
+                    <a href="./intensives.html">О нас</a>
+                    <a href="./intensives.html">Преимущества</a>
+                    <a href="./intensives.html">В чём мы лучшие</a>
+                    <a href="./intensives.html">FAQ</a>
+                    <a href="./intensives.html">Оформление заказа</a>
+                    <a href="./intensives.html">Информация по копирайту</a>
+
+                </div>
+                <div class="socials">
+                    <div class="socials__logo">
+                        <h1> С Вами в одно касание</h1>
+                        <p>Мы не отправляем спам, не переживайте</p>
+                    </div>
+                    <div class="input">
+                        <input placeholder="E-mail" type="email" id="email" name="email">
+                        <button type="button" class="button"><img src="./src/images/icons/button-arrow.svg" alt=""></button>
+                    </div>
+                    <div class="socials__block">
+                        <a class="social__item" href="#"><img src="./src/images/icons/telegram.svg" alt=""></a>
+                        <a class="social__item" href="#"><img src="./src/images/icons/twitter.svg" alt=""></a>
+                        <a class="social__item" href="#"><img src="./src/images/icons/youtube.svg" alt=""></a>
+                        <a class="social__item" href="#"><img src="./src/images/icons/github.svg" alt=""></a>
+                        <a class="social__item" href="#"><img src="./src/images/icons/vk.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        
+    </div>
+    <script src="./src/js/burger.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/popup.js"></script>
+
+</body>
+</html>

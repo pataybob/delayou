@@ -1,0 +1,13 @@
+// Подключаю все scss в один
+
+@import 'vars'; // Переменные
+@import 'fonts'; // Шрифты
+@import 'reset'; // Сбросы
+@import 'global'; // Глобальные настройки
+@import 'adaptive'; // адаптив
+
+// _________Components_________
+@import 'header'; // header
+@import 'popup'; // pop up
+@import 'main' ;// mains
+@import 'footer' // footer 

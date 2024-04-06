@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+// Container
+$containerWidth : 1400px ; // Ширина контейнера
+$ContainerPadding : 20px ; // Отступы внутри контейнера
+
+// Adaptive Breakpoint
+$breakpoint1450: 1449.98px +px; // 1450px
+$breakpoint1300: 1299px +px; // 1450px
+$breakpoint992: 991.98px +px; // 992px
+$breakpoint768: 767.98px +px; // 768px
+$breakpoint480: 479.98px +px; // 480px
+
+//Fonts
+$regular:'SFPro-Regular';
+$light: 'SFPro-Light';
+$medium: 'SFPro-Medium';
+$bold:'SFPro-Bold';
+
+
+// Colors
+$whiteColor: #fff;
+$secondaryLightColor: #7c94f4;
+$buttonsColor:#3026A1;
+$blackColor: #000000;
+$primaryColor : #fff;
+$secondaryColor : #fff;
+$primaryDark : #fff;
+$primary : #fff;

@@ -1,0 +1,21 @@
+.container{
+    width: $containerWidth;
+    padding: $ContainerPadding;
+    margin: 0 auto;
+}
+
+.block {
+    opacity: 0; /* начальное состояние блоков - скрыты */
+    transform: translateY(50px); /* начальное состояние блоков - скрыты */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
