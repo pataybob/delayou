@@ -900,6 +900,7 @@
                    
                     .why__we-card{
                         width: 150px !important;
+                        height: 220px !important;
                         gap: 0px !important;
 
                     }
@@ -1112,8 +1113,9 @@
         }
         }
         .registration{
-            position: relative;
-            right: 40px;
+            // position: relative;
+            // right: 50px;
+            // margin-left: 555px !important;
             .registration__header{
                 h1{
                     position: relative;
@@ -1614,7 +1616,8 @@
         }
         }
         .registration{
-            margin-right: 88px !important;
+            position: relative;
+            margin-left: 20px !important;
             .registration__header{
                 h1{
                     position: relative;

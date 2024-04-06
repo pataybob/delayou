@@ -772,6 +772,7 @@ a {
   }
   .why__we .why__we-cards .cards__container .why__we-card {
     width: 150px !important;
+    height: 220px !important;
     gap: 0px !important;
   }
   .why__we .why__we-cards .cards__container .grid-card1 {
@@ -956,10 +957,6 @@ a {
     font-size: 1.1rem;
     font-family: "SFPro-Regular";
   }
-}
-.registration {
-  position: relative;
-  right: 40px;
 }
 .registration .registration__header h1 {
   position: relative;
@@ -1392,7 +1389,8 @@ a {
   }
 }
 .registration {
-  margin-right: 88px !important;
+  position: relative;
+  margin-left: 20px !important;
 }
 .registration .registration__header h1 {
   position: relative;
