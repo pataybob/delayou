@@ -608,12 +608,12 @@ a {
     align-items: center;
   }
   .container {
-    max-width: 450px !important;
+    max-width: 400px !important;
   }
   .header {
     margin: 0 !important;
     position: relative;
-    right: 15px;
+    right: 5px;
     background-color: #fff !important;
     height: 70px !important;
     width: 100% !important;
@@ -658,7 +658,7 @@ a {
   }
   .header .header__nav {
     display: flex;
-    gap: 20px !important;
+    gap: 15px !important;
   }
   .header .header__nav li {
     color: #000000 !important;
@@ -701,7 +701,7 @@ a {
   }
   main {
     margin-top: 30px !important;
-    margin-left: 45px;
+    margin-left: 65px;
   }
   main .main__head {
     min-width: 300px;
@@ -772,6 +772,7 @@ a {
   }
   .why__we .why__we-cards .cards__container .why__we-card {
     width: 150px !important;
+    height: 220px !important;
     gap: 0px !important;
   }
   .why__we .why__we-cards .cards__container .grid-card1 {
@@ -804,7 +805,7 @@ a {
     grid-area: 2/1/3/3;
   }
   .about__us {
-    margin-right: 30px;
+    margin-right: 5px;
   }
   .questions__container {
     position: relative;
@@ -867,7 +868,9 @@ a {
     stroke: #624AFF;
   }
   .questions__container .questions .questions__body .answers {
-    width: 300px !important;
+    position: relative;
+    right: 30px;
+    width: 250px !important;
     height: 400px !important;
     position: relative;
     top: 60px;
@@ -880,7 +883,8 @@ a {
     display: none;
   }
   .questions__container .questions .questions__body .answers #answer1 {
-    padding: 50px 100px;
+    margin-left: 30px;
+    padding: 40px 60px !important;
     transform: translateY(20px); /* начальное состояние блоков - скрыты */
     transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
   }
@@ -889,62 +893,70 @@ a {
     font-family: "SFPro-Bold";
   }
   .questions__container .questions .questions__body .answers #answer1 p {
-    margin-top: 50px;
+    margin-top: 30px !important;
     font-size: 1.1rem;
     font-family: "SFPro-Regular";
   }
   .questions__container .questions .questions__body .answers #answer2 {
-    padding: 50px 100px;
+    margin-left: 30px;
+    padding: 40px 60px !important;
+    transform: translateY(20px); /* начальное состояние блоков - скрыты */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
   }
   .questions__container .questions .questions__body .answers #answer2 h1 {
     font-size: 1.2rem;
     font-family: "SFPro-Bold";
   }
   .questions__container .questions .questions__body .answers #answer2 p {
-    margin-top: 50px;
+    margin-top: 30px !important;
     font-size: 1.1rem;
     font-family: "SFPro-Regular";
   }
   .questions__container .questions .questions__body .answers #answer3 {
-    padding: 50px 100px;
+    margin-left: 30px;
+    padding: 40px 60px !important;
+    transform: translateY(20px); /* начальное состояние блоков - скрыты */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
   }
   .questions__container .questions .questions__body .answers #answer3 h1 {
     font-size: 1.2rem;
     font-family: "SFPro-Bold";
   }
   .questions__container .questions .questions__body .answers #answer3 p {
-    min-width: 70% !important;
-    margin-top: 50px;
+    margin-top: 30px !important;
     font-size: 1.1rem;
     font-family: "SFPro-Regular";
   }
   .questions__container .questions .questions__body .answers #answer4 {
-    padding: 50px 100px;
+    margin-left: 30px;
+    padding: 40px 60px !important;
+    transform: translateY(20px); /* начальное состояние блоков - скрыты */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
   }
   .questions__container .questions .questions__body .answers #answer4 h1 {
     font-size: 1.2rem;
     font-family: "SFPro-Bold";
   }
   .questions__container .questions .questions__body .answers #answer4 p {
-    margin-top: 50px;
+    margin-top: 30px !important;
     font-size: 1.1rem;
     font-family: "SFPro-Regular";
   }
   .questions__container .questions .questions__body .answers #answer5 {
-    padding: 50px 100px;
+    margin-left: 30px;
+    padding: 40px 60px !important;
+    transform: translateY(20px); /* начальное состояние блоков - скрыты */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
   }
   .questions__container .questions .questions__body .answers #answer5 h1 {
     font-size: 1.2rem;
     font-family: "SFPro-Bold";
   }
   .questions__container .questions .questions__body .answers #answer5 p {
-    margin-top: 50px;
+    margin-top: 30px !important;
     font-size: 1.1rem;
     font-family: "SFPro-Regular";
   }
-}
-.registration {
-  margin-right: 135px !important;
 }
 .registration .registration__header h1 {
   position: relative;
@@ -954,6 +966,440 @@ a {
 
 .footer .footer__container {
   gap: 50px !important;
+}
+.footer .footer__container .adress {
+  position: relative;
+  top: 8px;
+}
+.footer .footer__container .adress .footer__logo img {
+  width: 20px;
+  height: 20px;
+}
+.footer .footer__container .adress .adress__item img {
+  width: 16px;
+  height: 16px;
+}
+.footer .footer__container .socials .input {
+  max-width: 90px;
+  max-height: 40px;
+  padding: 0 !important;
+}
+.footer .footer__container .socials button {
+  max-width: 50px;
+  max-height: 30px;
+  position: relative;
+  right: 10px;
+}
+.footer .footer__container .socials button img {
+  width: 20px;
+  height: 15px;
+}
+.footer .footer__container .socials .socials__block a img {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 375px) and (max-width: 400px) {
+  * {
+    font-size: 7px;
+  }
+  .wrapper {
+    gap: 30px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    max-width: 450px !important;
+  }
+  .header {
+    margin: 0 !important;
+    position: relative;
+    right: 35px;
+    background-color: #fff !important;
+    height: 70px !important;
+    width: 100% !important;
+    border-radius: 0px !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    gap: 10px !important;
+  }
+  .header .header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    max-width: 35px !important;
+  }
+  .header .header__logo .text__logo {
+    display: none !important;
+    flex-direction: column;
+  }
+  .header .header__logo .logo__img {
+    align-items: center;
+  }
+  .header .header__logo .logo__img img {
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  .header .after {
+    display: none !important;
+  }
+  .header .after::after {
+    content: "";
+    height: 1px;
+    width: 53px;
+    display: block;
+    background-color: #FFF;
+    transform: rotate(90deg);
+  }
+  .header .header__nav {
+    display: flex;
+    gap: 10px !important;
+  }
+  .header .header__nav li {
+    color: #000000 !important;
+    font-family: "SFPro-Regular";
+    font-weight: 300;
+  }
+  .header .header__nav li a {
+    font-size: 9px !important;
+    text-transform: uppercase;
+  }
+  .header .header__nav li a:hover {
+    color: #7c94f4;
+    transition: 0.3s ease;
+  }
+  .header .header__nav li:nth-child(5) {
+    display: none !important;
+  }
+  .header .header__btn a {
+    position: relative;
+    left: 5px !important;
+    background-color: #3026A1 !important;
+    padding: 5px 8px !important;
+    border-radius: 8px;
+    color: #fff !important;
+    cursor: pointer;
+    top: 2px;
+  }
+  .header .header__btn a a {
+    color: #010101;
+    font-size: 14px;
+  }
+  .header .header__btn a:hover {
+    transition: 0.3s ease;
+    color: #fff;
+    background-color: #3026A1;
+    box-shadow: 0 4px 29px rgba(255, 255, 255, 0.25);
+  }
+  .order h1 {
+    font-size: 14px !important;
+  }
+  main {
+    margin-top: 30px !important;
+    margin-left: 25px;
+  }
+  main .main__head {
+    min-width: 300px;
+  }
+  main .main__head h1 {
+    min-width: 300px;
+    font-size: 18px !important;
+  }
+  main .main__body {
+    display: flex;
+    flex-direction: column-reverse !important;
+    gap: 20px;
+    align-items: center;
+  }
+  main .main__body .advantages {
+    margin-top: 50px;
+  }
+  main .main__body .photo__side {
+    position: relative;
+    right: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  main .main__footer {
+    position: relative;
+    right: 55px;
+  }
+  main .main__footer .advantages__container {
+    gap: -20px !important;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .banner {
+    position: relative;
+    bottom: 100px;
+    margin: 200px auto;
+  }
+  .banner .content {
+    flex-direction: column-reverse !important;
+    gap: 50px;
+  }
+  .banner .content .promo h1 {
+    font-size: 32px;
+    color: #3026A1 !important;
+    text-align: center;
+  }
+  .why__we .why__we-head {
+    position: relative;
+    right: 85px;
+  }
+  .why__we .why__we-body {
+    justify-content: start !important;
+  }
+  .why__we .why__we-body .info__side {
+    max-width: 30%;
+    justify-content: start !important;
+  }
+  .why__we .why__we-body .photo__side img {
+    width: 240px !important;
+    height: 200px !important;
+  }
+  .why__we .why__we-cards .cards__container {
+    display: grid !important;
+    position: relative;
+    right: 100px;
+  }
+  .why__we .why__we-cards .cards__container .why__we-card {
+    width: 150px !important;
+    gap: 0px !important;
+  }
+  .why__we .why__we-cards .cards__container .grid-card1 {
+    grid-area: 1/1/2/2;
+  }
+  .why__we .why__we-cards .cards__container .grid-card2 {
+    grid-area: 1/2/2/3;
+  }
+  .why__we .why__we-cards .cards__container .grid-card3 {
+    grid-area: 2/1/3/3;
+  }
+  .services {
+    position: relative;
+    right: 15px;
+  }
+  .services .services__body .cards {
+    display: grid !important;
+    gap: 0 !important;
+  }
+  .services .services__body .cards .card {
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .services .services__body .cards .firstCard {
+    grid-area: 1/1/2/2;
+  }
+  .services .services__body .cards .secondCard {
+    grid-area: 1/2/2/3;
+    position: relative;
+    right: 90px;
+    margin-left: 20px;
+  }
+  .services .services__body .cards .thirdCard {
+    grid-area: 2/1/3/3;
+  }
+  .about__us {
+    position: relative;
+    right: 40px;
+  }
+  .about__us .about__header h1 {
+    font-size: 16px !important;
+  }
+  .about__us .about__header p {
+    font-size: 12px;
+  }
+  .about__us .about__photo img {
+    display: none !important;
+  }
+  .about__us .info__side {
+    text-align: center;
+  }
+  .about__us .info__side ul {
+    list-style: none !important;
+    list-style-type: none !important;
+  }
+  .about__us .info__side ul li {
+    list-style: none !important;
+    list-style-type: none !important;
+  }
+  .why__we {
+    position: relative;
+    right: 7px;
+  }
+  .why__we .why__we-head {
+    margin-left: 50px !important;
+  }
+  .why__we .why__we-cards {
+    position: relative;
+    margin-left: 50px;
+  }
+  .why__we .why__we-cards .cards__container {
+    margin-left: 20px;
+  }
+  .why__we .why__we-cards .cards__container .why__we-card {
+    height: 180px !important;
+  }
+  .questions__container {
+    position: relative;
+    right: 90px;
+  }
+  .questions__container .questions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .questions__container .questions .questions__logo h1 {
+    margin: 30px 0;
+    font-size: 3rem;
+    font-family: "SFPro-Bold";
+  }
+  .questions__container .questions .questions__body {
+    position: relative;
+    right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .questions__container .questions .questions__body .question__side {
+    width: 200px !important;
+    height: 24rem;
+    position: relative;
+    left: 50px;
+    z-index: 999;
+    border: 0.5px solid rgba(203, 200, 200, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  .questions__container .questions .questions__body .question__side .question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8px;
+    align-items: center;
+    border-bottom: 0.5px solid rgba(203, 200, 200, 0.3);
+    cursor: pointer;
+  }
+  .questions__container .questions .questions__body .question__side .question .ellipse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  .questions__container .questions .questions__body .question__side .selected {
+    background-color: #FAFBFF !important;
+  }
+  .questions__container .questions .questions__body .question__side .selected .ellipse svg circle {
+    fill: #624AFF;
+  }
+  .questions__container .questions .questions__body .question__side .selected svg path {
+    stroke: #624AFF;
+  }
+  .questions__container .questions .questions__body .answers {
+    width: 200px !important;
+    height: 400px !important;
+    position: relative;
+    top: 60px;
+    background-color: #FAFBFF;
+    box-shadow: 3px 3px 4px #FAFBFF;
+    border: 1px solid #cbc8c8;
+    border-radius: 16px;
+  }
+  .questions__container .questions .questions__body .answers .hiddens {
+    display: none;
+  }
+  .questions__container .questions .questions__body .answers #answer1 {
+    padding: 20px 60px;
+    transform: translateY(20px); /* начальное состояние блоков - скрыты */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* плавное появление */
+  }
+  .questions__container .questions .questions__body .answers #answer1 h1 {
+    font-size: 1.2rem;
+    font-family: "SFPro-Bold";
+  }
+  .questions__container .questions .questions__body .answers #answer1 p {
+    margin-top: 15px !important;
+    font-size: 1.1rem;
+    font-family: "SFPro-Regular";
+  }
+  .questions__container .questions .questions__body .answers #answer2 {
+    padding: 20px 60px;
+  }
+  .questions__container .questions .questions__body .answers #answer2 h1 {
+    font-size: 1.2rem;
+    font-family: "SFPro-Bold";
+  }
+  .questions__container .questions .questions__body .answers #answer2 p {
+    margin-top: 15px !important;
+    font-size: 1.1rem;
+    font-family: "SFPro-Regular";
+  }
+  .questions__container .questions .questions__body .answers #answer3 {
+    padding: 20px 60px;
+  }
+  .questions__container .questions .questions__body .answers #answer3 h1 {
+    font-size: 1.2rem;
+    font-family: "SFPro-Bold";
+  }
+  .questions__container .questions .questions__body .answers #answer3 p {
+    min-width: 70% !important;
+    margin-top: 10px !important;
+    font-size: 1.1rem;
+    font-family: "SFPro-Regular";
+  }
+  .questions__container .questions .questions__body .answers #answer4 {
+    padding: 20px 60px;
+  }
+  .questions__container .questions .questions__body .answers #answer4 h1 {
+    font-size: 1.2rem;
+    font-family: "SFPro-Bold";
+  }
+  .questions__container .questions .questions__body .answers #answer4 p {
+    margin-top: 15px !important;
+    font-size: 1.1rem;
+    font-family: "SFPro-Regular";
+  }
+  .questions__container .questions .questions__body .answers #answer5 {
+    padding: 20px 60px;
+    min-width: 150px;
+  }
+  .questions__container .questions .questions__body .answers #answer5 h1 {
+    font-size: 1.2rem;
+    font-family: "SFPro-Bold";
+  }
+  .questions__container .questions .questions__body .answers #answer5 p {
+    margin-top: 15px !important;
+    font-size: 1.1rem;
+    font-family: "SFPro-Regular";
+  }
+}
+.registration {
+  position: relative;
+  margin-left: 20px !important;
+}
+.registration .registration__header h1 {
+  position: relative;
+  left: 45px;
+  max-width: 80%;
+}
+
+.footer .footer__container {
+  gap: 20px !important;
 }
 .footer .footer__container .adress {
   position: relative;
