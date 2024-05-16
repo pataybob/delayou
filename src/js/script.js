@@ -1,25 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Найти элементы прелоадера и основного контента
-    var preloader = document.getElementById("preloader");
-    var mainContent = document.getElementById("main__content");
+    let preloader = document.getElementById("preloader");
+    let mainContent = document.getElementById("main__content");
+    let preloaderEndLink = document.querySelector(".preloader__end");
 
-    // Найти элемент с классом preloader__end
-    var preloaderEndLink = document.querySelector(".preloader__end");
-
-    // Добавить обработчик события клика на элемент preloader__end
+    
     preloaderEndLink.addEventListener("click", function(event) {
-        // Отменить стандартное действие ссылки (не переходить по адресу)
         event.preventDefault();
-
-        // Скрыть прелоадер
         preloader.style.display = "none";
-
-        // Добавить класс fadeIn для основного контента с задержкой
         setTimeout(function() {
             mainContent.classList.add("fadeIn");
-        }, 100); // Задержка для просмотра анимации
-
-        // Показать основное содержимое
+        }, 100);
         mainContent.style.opacity = "1";
     });
 });
@@ -39,10 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (isElementInViewport(block)) {
                     block.classList.add("visible");
                     block.classList.remove("hidden");
-                } else {
-                    block.classList.add("hidden");
-                    block.classList.remove("visible");
-                }
+                 } 
+                // else {
+                //     block.classList.add("hidden");
+                //     block.classList.remove("visible");
+                // }
             }
         });
     }
@@ -52,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+    let rect = el.getBoundingClientRect();
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -91,6 +82,17 @@ function toggleColor(element) {
 }
 
 
-let inputs = document.querySelectorAll('input[type="tel"]');
-let im = new Inputmask('+7 (999) 999-99-99');
-im.mask(inputs);
+
+document.addEventListener("DOMContentLoaded", function() {
+    let listItems = document.querySelectorAll('.list__item');
+
+    listItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            listItems.forEach(function(otherItem) {
+                otherItem.classList.remove('primary');
+            });
+
+            item.classList.add('primary');
+        });
+    });
+});

@@ -24,10 +24,10 @@
 }
 
 // .gradient-text {
-//     background: linear-gradient(to right, #ff0000, #00ff00, #0000ff); /* Градиент от красного к зеленому к синему */
-//     -webkit-background-clip: text; /* Клип текста к градиенту */
-//     -webkit-text-fill-color: transparent; /* Прозрачный цвет текста для отображения градиента */
-//     animation: textGradient 5s infinite alternate; /* Анимация градиента текста */
+//     background: linear-gradient(to right, #ff0000, #00ff00, #0000ff); 
+//     -webkit-background-clip: text; 
+//     -webkit-text-fill-color: transparent;
+//     animation: textGradient 5s infinite alternate;
 // }
 
 @keyframes slide {
@@ -42,10 +42,10 @@
 
 
 .main__content {
-    opacity: 0; /* Начальная прозрачность для анимации */
-    transition: opacity 2s ease; /* Анимация появления */
+    opacity: 0; 
+    transition: opacity 2s ease; 
 }
 
 .fadeIn {
-    opacity: 1; /* Показываем основное содержимое */
+    opacity: 1; 
 }

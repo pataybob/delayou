@@ -2870,10 +2870,98 @@ a {
   }
 }
 .main__content {
-  opacity: 0; /* Начальная прозрачность для анимации */
-  transition: opacity 2s ease; /* Анимация появления */
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 
 .fadeIn {
-  opacity: 1; /* Показываем основное содержимое */
+  opacity: 1;
+}
+
+.wrapper .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrapper .container .courses__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+}
+.wrapper .container .courses__header .courses__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+.wrapper .container .courses__header .courses__nav .courses__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.wrapper .container .courses__header .courses__nav .courses__ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 5px;
+}
+.wrapper .container .courses__header .courses__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.wrapper .container .courses__main {
+  margin-top: 120px;
+}
+.wrapper .container .courses__main .courses__head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.wrapper .container .courses__main .courses__head h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.wrapper .container .courses__main .courses__head p {
+  font-size: 24px;
+  font-weight: 400;
+}
+.wrapper .container .courses__main .courses__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+.wrapper .container .courses__main .courses__list p {
+  font-size: 24px;
+}
+.wrapper .container .courses__main .courses__list .list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.wrapper .container .courses__main .courses__list .list .list__item {
+  text-align: center;
+  padding: 12px 10px;
+  background: #ECF1F7;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.wrapper .container .courses__main .courses__list .list .primary {
+  background: #FFDD2D;
 }/*# sourceMappingURL=style.css.map */
