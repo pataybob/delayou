@@ -1,7 +1,7 @@
 .header{
     margin: 0 auto;
     margin-top: 30px;
-    background-color: $blackColor;
+    // background-color: $blackColor;
     height: 136px;
     width: 85rem;
     border-radius: 35px;
@@ -22,12 +22,12 @@
             flex-direction: column;
             gap: 5px;
             h1{
-                color: $whiteColor;
+                color: $blackColor;
                 font-family: $bold;
                 font-size: 1.5rem ;
             }
             p{
-                color: $whiteColor;
+                color: $blackColor;
                 font-size: 1rem;
             }
         }
@@ -40,7 +40,7 @@
             height: 1px;
             width: 53px;
             display: block;
-            background-color: #FFF;
+            background-color: $blackColor;
             transform: rotate(90deg);
         }
     }
@@ -48,7 +48,7 @@
         display: flex;
         gap:40px;
         li{
-            color: #FFF;
+            color: $blackColor;
             font-size: 14px;
             font-family: $regular;
             font-weight: 300;
@@ -62,10 +62,10 @@
     .header__btn a{
         position: relative;
         right: 20px;
-        background-color: #FFF;
+        background-color: $blackColor;
         padding: 10px 60px; //
         border-radius: 8px;
-        color: $blackColor;
+        color: $whiteColor;
         cursor: pointer;
         padding: 15px 35px;
         a{

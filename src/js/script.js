@@ -1,26 +1,31 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     let blocks = document.querySelectorAll(".block");
+document.addEventListener("DOMContentLoaded", function() {
+    // Найти элементы прелоадера и основного контента
+    var preloader = document.getElementById("preloader");
+    var mainContent = document.getElementById("main__content");
 
-//     window.addEventListener("scroll", function() {
-//         blocks.forEach(function(block) {
-//             if (isElementInViewport(block)) {
-//                 block.classList.add("visible");
-//                 block.classList.remove("hidden");
-//             }
-//         });
-//     });
+    // Найти элемент с классом preloader__end
+    var preloaderEndLink = document.querySelector(".preloader__end");
 
-//     function isElementInViewport(el) {
-//         let rect = el.getBoundingClientRect();
+    // Добавить обработчик события клика на элемент preloader__end
+    preloaderEndLink.addEventListener("click", function(event) {
+        // Отменить стандартное действие ссылки (не переходить по адресу)
+        event.preventDefault();
 
-//         return (
-//             rect.top >= 0 &&
-//             rect.left >= 0 &&
-//             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//         );
-//     }
-// });
+        // Скрыть прелоадер
+        preloader.style.display = "none";
+
+        // Добавить класс fadeIn для основного контента с задержкой
+        setTimeout(function() {
+            mainContent.classList.add("fadeIn");
+        }, 100); // Задержка для просмотра анимации
+
+        // Показать основное содержимое
+        mainContent.style.opacity = "1";
+    });
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     let blocks = document.querySelectorAll(".block");
 
@@ -84,3 +89,8 @@ function toggleColor(element) {
         selectedElement = null;
     }
 }
+
+
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+7 (999) 999-99-99');
+im.mask(inputs);

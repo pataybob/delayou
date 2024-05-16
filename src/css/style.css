@@ -1875,7 +1875,6 @@ a {
 .header {
   margin: 0 auto;
   margin-top: 30px;
-  background-color: #000000;
   height: 136px;
   width: 85rem;
   border-radius: 35px;
@@ -1899,12 +1898,12 @@ a {
   gap: 5px;
 }
 .header .header__logo .text__logo h1 {
-  color: #fff;
+  color: #000000;
   font-family: "SFPro-Bold";
   font-size: 1.5rem;
 }
 .header .header__logo .text__logo p {
-  color: #fff;
+  color: #000000;
   font-size: 1rem;
 }
 .header .after {
@@ -1915,7 +1914,7 @@ a {
   height: 1px;
   width: 53px;
   display: block;
-  background-color: #FFF;
+  background-color: #000000;
   transform: rotate(90deg);
 }
 .header .header__nav {
@@ -1923,7 +1922,7 @@ a {
   gap: 40px;
 }
 .header .header__nav li {
-  color: #FFF;
+  color: #000000;
   font-size: 14px;
   font-family: "SFPro-Regular";
   font-weight: 300;
@@ -1935,10 +1934,10 @@ a {
 .header .header__btn a {
   position: relative;
   right: 20px;
-  background-color: #FFF;
+  background-color: #000000;
   padding: 10px 60px;
   border-radius: 8px;
-  color: #000000;
+  color: #fff;
   cursor: pointer;
   padding: 15px 35px;
 }
@@ -2835,4 +2834,46 @@ a {
 .footer .footer__container .socials .socials__block .social__item img:hover {
   transform: translateY(-10px);
   transition: all 0.4s ease-out;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+  overflow-y: hidden;
+  overflow: hidden;
+}
+.preloader a {
+  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%, rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+  background-size: 600vw 600vw;
+  animation: slide 10s linear infinite forwards;
+  font-size: 160px;
+  font-weight: 900;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes slide {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position: 600vw;
+  }
+}
+.main__content {
+  opacity: 0; /* Начальная прозрачность для анимации */
+  transition: opacity 2s ease; /* Анимация появления */
+}
+
+.fadeIn {
+  opacity: 1; /* Показываем основное содержимое */
 }/*# sourceMappingURL=style.css.map */
