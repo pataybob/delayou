@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             mainContent.classList.add("fadeIn");
         }, 100);
         mainContent.style.opacity = "1";
+        
     });
 });
 

@@ -2913,6 +2913,7 @@ a {
   border-radius: 5px;
 }
 .wrapper .container .courses__header .courses__profile {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2964,4 +2965,71 @@ a {
 }
 .wrapper .container .courses__main .courses__list .list .primary {
   background: #FFDD2D;
+}
+.wrapper .container .courses__main .courses__body {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.wrapper .container .courses__main .courses__body .filters {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  height: 550px;
+  width: 300px;
+}
+.wrapper .container .courses__main .courses__body .courses__select {
+  width: 800px;
+  height: 550px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container .courses__main .courses__body .courses__select h1 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select .design-and-graphics, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select .design-and-graphics {
+  background-color: #FFDD2D;
+  border-radius: 15px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select .design-and-graphics .card__info, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select .design-and-graphics .card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select .design-and-graphics .card__info .card__header, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select .design-and-graphics .card__info .card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select .design-and-graphics .card__info .card__header p, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select .design-and-graphics .card__info .card__header p {
+  font-size: 12px;
+  font-weight: 300;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select .design-and-graphics .card__info .card__header h3, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select .design-and-graphics .card__info .card__header h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.wrapper .container .courses__main .courses__body .courses__select .select__body .left__select .design-and-graphics .card__info .card__footer p, .wrapper .container .courses__main .courses__body .courses__select .select__body .right__select .design-and-graphics .card__info .card__footer p {
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
